@@ -120,7 +120,7 @@ td {
   width: 60%;
   float: left;
 }
-.post-container {
+.post-detail .post-container {
   margin: 0 20px;
   padding: 30px 50px;
   background-color: #fff;
@@ -128,6 +128,21 @@ td {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   border-radius: 18px;
   box-sizing: border-box;
+}
+.post-detail .post-container .post-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+.post-detail .post-container .post-title .post-title-link {
+  color: #368ccb;
+  text-decoration: none;
+}
+.post-detail .post-container .post-content a {
+  color: #368ccb;
+  text-decoration: none;
+}
+.post-detail .post-container .post-meta {
+  color: #bababa;
 }
 .posts {
   padding: 0 5px;
@@ -138,33 +153,23 @@ td {
 .posts .post:first-child {
   margin-top: 0;
 }
-.posts .post-title {
-  font-size: 1.5em;
-}
-.posts .post-title .post-title-link {
-  color: #368ccb;
-  text-decoration: none;
-}
-.posts .post-content a {
-  color: #368ccb;
-  text-decoration: none;
-}
-.posts .post-meta {
-  color: #bababa;
-}
 .archive {
-  margin: 1em auto;
-  padding: 30px 50px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 2px #ddd;
-  box-sizing: border-box;
   width: 60%;
   float: left;
 }
 .archive .post-archive {
   list-style: none;
   padding: 0;
+  margin: 1em auto;
+  padding: 30px 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  border-radius: 18px;
+  margin: 20px;
+  box-sizing: border-box;
 }
 .archive .post-archive .post-item {
   margin: 5px 0;
@@ -182,7 +187,11 @@ td {
   width: 20%;
   float: left;
 }
-.tipsContainer .tag {
+.tipsContainer .tags .title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.tipsContainer .tags .tag {
   display: inline-block;
   border: 1px solid rgba(255,255,255,0.8);
   border-radius: 999em;
@@ -194,6 +203,9 @@ td {
   margin: 0 1px;
   margin-bottom: 6px;
   border-color: #bfbfbf;
+}
+.tipsContainer .tags .tag .tag_text {
+  color: #bfbfbf;
 }
 .introduction {
   width: 20%;
