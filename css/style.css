@@ -85,7 +85,7 @@ td {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 .header {
   display: flex;
@@ -139,10 +139,10 @@ a {
   box-sizing: border-box;
 }
 .post-detail .post-container .post-title {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
 }
-.post-detail .post-container .post-title .post-title-link {
+.post-detail .post-container .post-title .post-title-link:hover {
   color: #368ccb;
   text-decoration: none;
 }
@@ -150,14 +150,27 @@ a {
   color: #368ccb;
   text-decoration: none;
 }
+.post-detail .post-container .post-content h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
 .post-detail .post-container .post-meta {
   color: #bababa;
+  margin: 1rem 0;
 }
 .posts {
   padding: 0 5px;
   box-sizing: border-box;
   width: 60%;
   float: left;
+}
+.posts .post .post-title {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.posts .post .post-title-link:hover {
+  color: #368ccb;
 }
 .posts .post:first-child {
   margin-top: 0;
@@ -214,14 +227,9 @@ a {
   border-color: #bfbfbf;
   color: #bfbfbf;
 }
-.tipsContainer .tags .tag .tag_text {
-  color: #bfbfbf;
-}
-.tipsContainer .tags .tag .tag_text:hover {
-  color: #fff;
-}
 .tipsContainer .tags .tag:hover {
   background: #62b900;
+  color: #fff;
 }
 .introduction {
   width: 20%;
@@ -265,4 +273,26 @@ a {
 }
 .page-nav {
   text-align: center;
+}
+.page-nav a,
+.page-nav span {
+  height: 32px;
+  padding: 0 10px;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  color: #999;
+}
+.page-nav a:hover {
+  color: #fff;
+  background: #62b900;
+}
+.page-nav .current {
+  color: #565a5f;
+  font-weight: bold;
 }
