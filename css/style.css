@@ -10,6 +10,11 @@ body {
 .main {
   margin-top: 1rem;
   padding: 2rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.clearFixed {
+  clear: both;
 }
 html,
 body,
@@ -80,6 +85,7 @@ td {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 .header {
   display: flex;
@@ -206,9 +212,16 @@ a {
   margin: 0 1px;
   margin-bottom: 6px;
   border-color: #bfbfbf;
+  color: #bfbfbf;
 }
 .tipsContainer .tags .tag .tag_text {
   color: #bfbfbf;
+}
+.tipsContainer .tags .tag .tag_text:hover {
+  color: #fff;
+}
+.tipsContainer .tags .tag:hover {
+  background: #62b900;
 }
 .introduction {
   width: 20%;
@@ -249,4 +262,7 @@ a {
   margin: auto;
   line-height: 40px;
   color: #fff;
+}
+.page-nav {
+  text-align: center;
 }
