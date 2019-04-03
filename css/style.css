@@ -78,6 +78,9 @@ td {
   font-size: 100%;
   vertical-align: baseline;
 }
+a {
+  text-decoration: none;
+}
 .header {
   display: flex;
   align-items: baseline;
@@ -121,7 +124,7 @@ td {
   float: left;
 }
 .post-detail .post-container {
-  margin: 0 20px;
+  margin: 0 25px;
   padding: 30px 50px;
   background-color: #fff;
   border: 1px solid #ddd;
