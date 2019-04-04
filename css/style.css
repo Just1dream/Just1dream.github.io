@@ -87,6 +87,40 @@ a {
   text-decoration: none;
   color: inherit;
 }
+@media screen and (min-width: 1150px) {
+  .post-detail,
+  .posts,
+  .archive {
+    width: 60%;
+  }
+  .tipsContainer {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .introduction {
+    display: none;
+  }
+  .post-detail,
+  .posts,
+  .archive {
+    width: 70%;
+  }
+  .tipsContainer {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .tips,
+  #live2d-widget {
+    display: none;
+  }
+  .post-detail,
+  .posts,
+  .archive {
+    width: 100%;
+  }
+}
 .header {
   display: flex;
   align-items: baseline;
@@ -126,7 +160,6 @@ a {
   border-radius: 18px;
 }
 .post-detail {
-  width: 60%;
   float: left;
 }
 .post-detail .post-container {
@@ -162,7 +195,6 @@ a {
 .posts {
   padding: 0 5px;
   box-sizing: border-box;
-  width: 60%;
   float: left;
 }
 .posts .post .post-title {
@@ -176,7 +208,6 @@ a {
   margin-top: 0;
 }
 .archive {
-  width: 60%;
   float: left;
 }
 .archive .post-archive {
@@ -206,7 +237,6 @@ a {
   text-decoration: none;
 }
 .tipsContainer {
-  width: 20%;
   float: left;
 }
 .tipsContainer .tags .title {
@@ -232,8 +262,8 @@ a {
   color: #fff;
 }
 .introduction {
-  width: 20%;
   float: left;
+  width: 20%;
 }
 .introduction .introductionContainer {
   text-align: center;
