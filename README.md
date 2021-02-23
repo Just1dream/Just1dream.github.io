@@ -1,2 +1,3 @@
 # Just1dream.github.io
-this is my first hexo blog
+This is my first hexo blo
+You can visit it in [myblog](https:Just1dream.github.io)
